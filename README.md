@@ -2,5 +2,5 @@
 
 ```
 $ npm run prepare
-$ explorer.exe index.html
+$ explorer.exe $(wslpath -w dist/index.html)
 ```

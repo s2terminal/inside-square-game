@@ -1,4 +1,6 @@
-# Usage
+# INSIDE SQUARE GAME
+
+## Usage
 
 ```
 $ npm run prepare

@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (gameStarted) {
       updateActors();
     } else if (!gameOver) {
-      canvasContext.fillText('Don\'t touch cornors of the rectangle', 300, 70);
+      canvasContext.fillText('Don\'t touch corners of the rectangle', 300, 70);
       canvasContext.fillText('You are this OFFLINE square', 200, 200);
       canvasContext.fillText('Keep inside the rectangle', 220, 370);
     }

@@ -1,4 +1,4 @@
-# INSIDE SQUARE GAME
+# INSIDE THE RECT
 
 ## Usage
 

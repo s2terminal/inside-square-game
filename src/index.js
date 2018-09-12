@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     player.Y += player.accelY;
 
     // Enemies Update
-    const enemyAccelRate = (score < 200) ? 0.02 : 0.002 * score;
+    const enemyAccelRate = (score < 200) ? 0.02 : 0.0002 * score;
     [enemies[0], enemies[1]].forEach((enemy) => {
       enemy.accelX += (enemy.X < player.X ? 1 : -1) * enemyAccelRate;
       enemy.accelY += (enemy.Y < player.Y ? 1 : -1) * enemyAccelRate;
@@ -198,8 +198,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (gameStarted) {
       updateActors();
     } else if (!gameOver) {
-      canvasContext.fillText('Don\'t touch cornors of the square', 300, 60);
-      canvasContext.fillText('Keep inside the square', 220, 320);
+      canvasContext.fillText('Don\'t touch cornors of the rectangle', 300, 70);
+      canvasContext.fillText('You are this OFFLINE square', 200, 200);
+      canvasContext.fillText('Keep inside the rectangle', 220, 370);
     }
     if (life <= 0) {
       life = 0;

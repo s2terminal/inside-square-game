@@ -3,10 +3,13 @@
   "main": "index.js",
   "scripts": {
     "prepare": "webpack --config webpack.config.js",
-    "watch":   "webpack --config webpack.dev.js --watch"
+    "watch": "webpack --config webpack.dev.js --watch"
   },
   "author": "s2terminal",
   "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "webpack": "^4.18.0",
     "webpack-cli": "^3.1.0",
     "webpack-merge": "^4.1.4"
